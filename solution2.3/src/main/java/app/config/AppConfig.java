@@ -12,7 +12,6 @@ import org.springframework.context.annotation.Scope;
 public class AppConfig {
 
     @Bean(name="timer")
-    @Scope("singleton")
     public Timer timer() {
         return new Timer();
     }
